@@ -15,9 +15,9 @@ void set_process_memory(pid_t pid, long addr, long data) {
 }
 
 int main() {
-    pid_t pid = 13328; // Replace with the PID of the process you want to attach to
-    long addr = 0x7ffde743917c; // Replace with the memory address you want to modify
-    long new_value = 0xb; // Replace with the new value you want to write to the memory address
+    pid_t pid = PROCESS_PID; // Replace with the PID of the process you want to attach to
+    long addr = BASE_ADRESS + OFFSET ; // Replace with the memory address you want to modify
+    long new_value = NEW_VALUE_IN_HEX; // Replace with the new value you want to write to the memory address
 
     // Attach to the process
     if (ptrace(PTRACE_ATTACH, pid, NULL, NULL) < 0) {
