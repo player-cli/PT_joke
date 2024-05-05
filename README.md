@@ -15,3 +15,12 @@ All the same things can be found in disassemblers, but you should understand tha
 ![img](disasm.png)
 
 In the end, to obtain the address of the value, we simply need to subtract the base address that we found from the address of the value and get the offset
+# update
+I use gcc-13, command for compile programms
+```
+g++ mem.cpp -o mem
+use this only with sudo!
+```
+```
+g++ mainc.cpp -o mainc
+```
