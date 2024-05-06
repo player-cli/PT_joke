@@ -19,8 +19,10 @@ In the end, to obtain the address of the value, we simply need to subtract the b
 I use gcc-13, command for compile programms
 ```
 g++ mem.cpp -o mem
-use this only with sudo!
 ```
 ```
 g++ mainc.cpp -o mainc
+```
+```
+use "mem" with sudo
 ```
