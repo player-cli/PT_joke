@@ -4,7 +4,7 @@ This example probably shows the basis of what cheats themselves do for games
 # How it work?
 The first. We find base address of programm (command for find him)
 ```
-sudo cat/prpc/(pid of process)/maps
+sudo cat /proc/(pid of process)/maps
 ```
 Second step it`s find offset. You can use disassembler or another tool. As for me, i use GameConqueror and Ghidra/Cutter/IdaFree.
 Since we understand that we did not allocate memory on the heap, we should look for the value on the stack and after trying a couple of times we manage to find it.
